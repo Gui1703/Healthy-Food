@@ -19,16 +19,16 @@ function UpBar() {
           <i className="bx bx-menu" />
         </label>
         <div className="nav-itens">
-          <div className="link" onClick={() => navigateTo("Auto")}>
+          <div className="link" onClick={() => navigateTo("")}>
             HEALTHY RECIPES
           </div>
-          <div className="link" onClick={() => navigateTo("Pet")}>
+          <div className="link" onClick={() => navigateTo("blog")}>
             BLOG
           </div>
-          <div className="link" onClick={() => navigateTo("Residential")}>
+          <div className="link" onClick={() => navigateTo("join")}>
             JOIN
           </div>
-          <div className="link" onClick={() => navigateTo("Travel")}>
+          <div className="link" onClick={() => navigateTo("register")}>
             REGISTER
           </div>
         </div>
@@ -39,18 +39,18 @@ function UpBar() {
           <h1>Healthy Food</h1>
         </span>
         <div className="links">
-        <div onClick={() => navigateTo("Auto")}>
-          HEALTHY RECIPES
-        </div>
-        <div onClick={() => navigateTo("Pet")}>
-          BLOG
-        </div>
-        <div onClick={() => navigateTo("Residential")}>
-          JOIN
-        </div>
-        <div onClick={() => navigateTo("Travel")}>
-          REGISTER
-        </div>
+          <div className="link" onClick={() => navigateTo("")}>
+            HEALTHY RECIPES
+          </div>
+          <div className="link" onClick={() => navigateTo("blog")}>
+            BLOG
+          </div>
+          <div className="link" onClick={() => navigateTo("join")}>
+            JOIN
+          </div>
+          <div className="link register" onClick={() => navigateTo("register")}>
+            REGISTER
+          </div>
         </div>
       </nav>
     </div>

@@ -11,7 +11,7 @@ nav {
   width: 100%;
   background-color: transparent;
   margin-top: 30px;
-  position: fixed;
+  position: absolute;
 }
 
 span {
@@ -29,7 +29,7 @@ span {
   justify-content: flex-end;
   width: 100%;
   gap: 40px;
-  margin-right: 200px;
+  margin-right: 150px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -38,14 +38,19 @@ span {
   color: #ffffff;
 }
 
+.register {
+  color: #9acd32;
+  background-color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
 .link:hover {
   opacity: 0.8;
-  color: #000000;
 }
 
 .link:active {
   opacity: 0.8;
-  color: #000000;
 }
 
 #check {
@@ -94,7 +99,6 @@ span {
     line-height: 50px;
     cursor: pointer;
     margin: auto;
-    
   }
 
   .nav-itens {

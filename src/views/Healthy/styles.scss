@@ -3,4 +3,61 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  user-select: none;
+}
+
+.container-background {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+
+  background: url(../../assets/BackgroundsImages/home.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.description {
+  display: flex;
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 300px;
+  color: #05053d;
+  width: 350px;
+  line-height: 60px;
+}
+
+.input-home {
+  margin: 20px 0 0 200px;
+  width: 350px;
+  height: 40px;
+  padding-left: 10px;
+  border: 3px solid gray;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.input-home::placeholder {
+  opacity: 0.8;
+}
+
+.button-home {
+  width: 43px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  background-color: #9acd32;
+  color: #FFFFFF;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.button-home:hover {
+  opacity: 0.8;
+}
+
+.button-home:active {
+  opacity: 0.5;
 }

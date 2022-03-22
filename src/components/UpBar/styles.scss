@@ -11,13 +11,7 @@ nav {
   width: 100%;
   background-color: transparent;
   margin-top: 30px;
-}
-
-.logo {
-  display: flex;
-  margin: 0 51.25px 0 76px;
-  width: 125px;
-  height: 40.79px;
+  position: fixed;
 }
 
 span {
@@ -25,7 +19,7 @@ span {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  margin-left: 100px;
+  margin-left: 200px;
   color: #9acd32;
 }
 
@@ -35,7 +29,7 @@ span {
   justify-content: flex-end;
   width: 100%;
   gap: 40px;
-  margin-right: 100px;
+  margin-right: 200px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

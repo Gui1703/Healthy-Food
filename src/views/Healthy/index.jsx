@@ -15,14 +15,15 @@ function Healthy() {
         <UpBar />
         <div>
           <span className="description">Ready for Trying a new recipe?</span>
+         <div className="input-button">
           <input
-            className="input-home"
             type="text"
             placeholder="Search healthy recipes"
           />
-          <button className="button-home" type="button">
+          <button type="button">
             <i className="bx bx-search-alt-2"></i>
           </button>
+        </div>
         </div>
       </div>
 

@@ -15,20 +15,19 @@ function Healthy() {
         <UpBar />
         <div>
           <span className="description">Ready for Trying a new recipe?</span>
-         <div className="input-button">
-          <input
-            type="text"
-            placeholder="Search healthy recipes"
-          />
-          <button type="button">
-            <i className="bx bx-search-alt-2"></i>
-          </button>
-        </div>
+          <div className="input-button">
+            <input type="text" placeholder="Search healthy recipes" />
+            <button type="button">
+              <a href="#our-best">
+                <i className="bx bx-search-alt-2"></i>
+              </a>
+            </button>
+          </div>
         </div>
       </div>
 
       <div className="container-best">
-        <h2 className="title-best">Our Best Recipes</h2>
+        <h2 id="our-best" className="title-best">Our Best Recipes</h2>
         <p className="paragraph-one">
           Far far away, behind the word mountains, far from the countries
         </p>

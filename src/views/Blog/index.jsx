@@ -1,11 +1,16 @@
-import Card1 from "../../components/ComponentCard/Card1";
-import Card2 from "../../components/ComponentCard/Card2";
-import Card3 from "../../components/ComponentCard/Card3";
-import Card4 from "../../components/ComponentCard/Card4";
+import Carousel from "react-elastic-carousel";
+import CardBlog from "../../components/CardBlog";
 import "./styles.scss";
 
-import Carousel from "react-elastic-carousel";
+import Profile1 from "../../assets/Images/profile-1.jpg";
+import Profile2 from "../../assets/Images/profile-2.jpg";
+import Profile3 from "../../assets/Images/profile-3.jpg";
+import Profile4 from "../../assets/Images/profile-4.jpg";
 
+import Image1 from "../../assets/Images/image-1.svg";
+import Image2 from "../../assets/Images/image-2.svg";
+import Image3 from "../../assets/Images/image-3.svg";
+import Image4 from "../../assets/Images/image-4.svg";
 function Healthy() {
   return (
     <>
@@ -43,19 +48,59 @@ function Healthy() {
 
         <div className="carousel-max">
           <Carousel itemsToShow={3}>
-            <Card1 />
-            <Card2 />
-            <Card3 />
-            <Card4 />
+            <CardBlog
+              image={Image1}
+              description="Quick-start guide to nuts and seeds"
+              profile={Profile1}
+              name="Kevin Ibrahim"
+            />
+            <CardBlog
+              image={Image2}
+              description="Nutrition: Tips for Improving Your Health"
+              profile={Profile2}
+              name="Mike Jackson"
+            />
+            <CardBlog
+              image={Image3}
+              description="The top 10 benefits of eating healthy"
+              profile={Profile3}
+              name="Bryan McGregor"
+            />
+            <CardBlog
+              image={Image4}
+              description="What your plate is without healthy food"
+              profile={Profile4}
+              name="Hugo Weaving"
+            />
           </Carousel>
         </div>
 
         <div className="carousel-min">
           <Carousel itemsToShow={1}>
-            <Card1 />
-            <Card2 />
-            <Card3 />
-            <Card4 />
+            <CardBlog
+              image={Image1}
+              description="Quick-start guide to nuts and seeds"
+              profile={Profile1}
+              name="Kevin Ibrahim"
+            />
+            <CardBlog
+              image={Image2}
+              description="Nutrition: Tips for Improving Your Health"
+              profile={Profile2}
+              name="Mike Jackson"
+            />
+            <CardBlog
+              image={Image3}
+              description="The top 10 benefits of eating healthy"
+              profile={Profile3}
+              name="Bryan McGregor"
+            />
+            <CardBlog
+              image={Image4}
+              description="What your plate is without healthy food"
+              profile={Profile4}
+              name="Hugo Weaving"
+            />
           </Carousel>
         </div>
       </div>

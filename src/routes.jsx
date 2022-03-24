@@ -1,8 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Healthy from "./views/Healthy/index.jsx";
-import Blog from "./views/Blog";
-import Join from "./views/Join";
+import Healthy from "./views/Healthy";
 import Register from "./views/Register";
 
 export default function myRoutes() {
@@ -10,8 +8,6 @@ export default function myRoutes() {
     <Router>
       <Routes>
         <Route path="/" element={<Healthy />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/join" element={<Join />} />
         <Route path="/register" element={<Register />} />
       </Routes>
     </Router>

@@ -36,6 +36,11 @@ span {
   line-height: 16px;
   cursor: pointer;
   color: #ffffff;
+
+  a {
+  color: #ffffff;
+
+  }
 }
 
 .register {
@@ -99,6 +104,10 @@ span {
     line-height: 50px;
     cursor: pointer;
     margin: auto;
+    a {
+      color: #000000;
+    
+      }
   }
 
   .nav-itens {

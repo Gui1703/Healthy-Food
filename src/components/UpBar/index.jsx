@@ -22,11 +22,11 @@ function UpBar() {
           <div className="link" onClick={() => navigateTo("")}>
             HEALTHY RECIPES
           </div>
-          <div className="link" onClick={() => navigateTo("blog")}>
-            BLOG
+          <div className="link">
+            <a href="#blog">BLOG</a>
           </div>
-          <div className="link" onClick={() => navigateTo("join")}>
-            JOIN
+          <div className="link">
+            <a href="#join">JOIN</a>
           </div>
           <div className="link" onClick={() => navigateTo("register")}>
             REGISTER
@@ -42,11 +42,11 @@ function UpBar() {
           <div className="link" onClick={() => navigateTo("")}>
             HEALTHY RECIPES
           </div>
-          <div className="link" onClick={() => navigateTo("blog")}>
-            BLOG
+          <div className="link">
+            <a href="#blog">BLOG</a>
           </div>
-          <div className="link" onClick={() => navigateTo("join")}>
-            JOIN
+          <div className="link">
+            <a href="#join">JOIN</a>
           </div>
           <div className="link register" onClick={() => navigateTo("register")}>
             REGISTER

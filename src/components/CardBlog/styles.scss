@@ -10,10 +10,14 @@
     display: flex;
     align-items: center;
     margin-top: 10px;
-    
+
     img {
       width: 50px;
       margin-right: 10px;
+    }
+
+    div {
+      color: #808080;
     }
   }
 
@@ -33,62 +37,27 @@
     font-weight: 700;
     margin-top: 10px;
   }
-
-  button {
-    width: 150px;
-    height: 30px;
-    font-size: 17px;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    background-color: #9acd32;
-    margin-top: 5px;
-    cursor: pointer;
-  }
-
-  button:hover {
-    opacity: 0.8;
-  }
-
-  button:active {
-    opacity: 0.8;
-  }
 }
 
 @media (max-width: 640px) {
   .container-card-blog {
     display: flex;
-    flex-direction: row;
-    width: 80%;
+    flex-direction: column;
 
     img {
-      width: 150px;
+      width: 250px;
     }
 
     .bottom {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      margin: auto;
-      margin-left: 20px;
     }
 
-    .description-blog {
+    .description-card-blog {
       line-height: normal;
       font-size: 20px;
-      margin: 0;
-      width: 90%;
-    }
-
-    button {
-      width: 100px;
-      height: 30px;
-      font-size: 15px;
-      color: #ffffff;
-      border: none;
-      border-radius: 5px;
-      background-color: #9acd32;
-      margin-top: 5px;
+      width: 250px;
     }
   }
 }

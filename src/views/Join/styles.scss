@@ -64,15 +64,21 @@ footer {
   height: 100px;
   padding-left: 150px;
   font-size: 18px;
-  color: #504f4f;
+
+  p {
+    color: #504f4f;
+  }
 
   div {
     display: flex;
     justify-content: flex-end;
     width: 70%;
     gap: 40px;
-    color: #808080;
     padding-right: 90px;
+
+    p {
+      color: #808080;
+    }
   }
 }
 
@@ -143,7 +149,7 @@ button:active {
     font-size: 16px;
     color: #504f4f;
     padding-left: 15px;
-  
+
     div {
       display: flex;
       flex-direction: row;

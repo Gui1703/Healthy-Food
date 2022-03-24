@@ -1,4 +1,3 @@
-import UpBar from "../../components/UpBar";
 import Card1 from "../../components/ComponentCard/Card1";
 import Card2 from "../../components/ComponentCard/Card2";
 import Card3 from "../../components/ComponentCard/Card3";
@@ -10,24 +9,25 @@ import Carousel from "react-elastic-carousel";
 function Healthy() {
   return (
     <>
-      <UpBar />
       <div className="container-blog">
-        <h1 className="title-blog">The best services ready To serve you</h1>
-        <p className="description-blog">
-          Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia, there live the blind texts.
-        </p>
-        <p className="description-blog">
-          Separated they live in Bookmarksgrove right at the coast of the
-          Semantics, a large language ocean.
-        </p>
-        <p className="description-blog">
-          A small river named Duden flows by their place and supplies it with
-          the necessary regelialia.
-        </p>
-        <button className="button-blog" type="button">
-          <a href="#our-blog">Know More</a>
-        </button>
+        <div>
+          <h1 className="title-blog">The best services ready To serve you</h1>
+          <p className="description-blog">
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts.
+          </p>
+          <p className="description-blog">
+            Separated they live in Bookmarksgrove right at the coast of the
+            Semantics, a large language ocean.
+          </p>
+          <p className="description-blog">
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia.
+          </p>
+          <button className="button-blog" type="button">
+            <a href="#our-blog">Know More</a>
+          </button>
+        </div>
       </div>
 
       <div className="blog">

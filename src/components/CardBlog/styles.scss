@@ -21,6 +21,7 @@
     }
   }
 
+  
   .bottom {
     display: flex;
     flex-direction: column;
@@ -37,6 +38,12 @@
     font-weight: 700;
     margin-top: 10px;
   }
+}
+
+.container-card-blog:hover {
+  opacity: 0.8;
+  transform: translateY(-10px);
+  cursor: pointer;
 }
 
 @media (max-width: 640px) {

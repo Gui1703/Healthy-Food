@@ -2,6 +2,7 @@ import React from "react";
 import UpBar from "../../components/UpBar";
 import CardFood from "../../components/CardFood";
 import "./styles.scss";
+import Blog from "../Blog";
 
 import Food1 from "../../assets/Images/food-1.svg";
 import Food2 from "../../assets/Images/food-2.svg";
@@ -27,7 +28,9 @@ function Healthy() {
       </div>
 
       <div className="container-best">
-        <h2 id="our-best" className="title-best">Our Best Recipes</h2>
+        <h2 id="our-best" className="title-best">
+          Our Best Recipes
+        </h2>
         <p className="paragraph-one">
           Far far away, behind the word mountains, far from the countries
         </p>
@@ -45,6 +48,8 @@ function Healthy() {
           <CardFood image={Food4} description="Cherry Cobbler on the Grill" />
         </div>
       </div>
+
+      <Blog />
     </>
   );
 }

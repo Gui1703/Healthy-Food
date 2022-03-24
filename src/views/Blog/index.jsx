@@ -9,9 +9,9 @@ import Carousel from "react-elastic-carousel";
 function Healthy() {
   return (
     <>
-      <div className="container-blog">
+      <div className="container-blog" id="blog">
         <div>
-          <h1 className="title-blog" id="blog">The best services ready To serve you</h1>
+          <h1 className="title-blog">The best services ready To serve you</h1>
           <p className="description-blog">
             Far far away, behind the word mountains, far from the countries
             Vokalia and Consonantia, there live the blind texts.

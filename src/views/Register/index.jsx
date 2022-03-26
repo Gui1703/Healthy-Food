@@ -1,12 +1,10 @@
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useNavigate } from "react-router-dom";
 import UpBar from "../../components/UpBar";
 import "./styles.scss";
 
 function Register() {
-  const navigate = useNavigate();
 
   //Seeking the zip code and filling its due inputs
   const checkCEP = (e) => {
@@ -78,10 +76,6 @@ function Register() {
 
   function submitForm() {
     console.log("Seus dados foram salvos no LocalStorage !");
-  }
-
-  function goHomePage() {
-    navigate("/");
   }
 
   document.onchange = saveLocalDataStorage;
@@ -193,14 +187,7 @@ function Register() {
           <span>{errors.district?.message}</span>
         </div>
 
-        <div className="buttons">
-          <button className="buttonSubmit" type="submit">
-            Submit
-          </button>
-          <button className="buttonHome" onClick={goHomePage}>
-            Go Back
-          </button>
-        </div>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );

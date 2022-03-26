@@ -48,14 +48,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-bottom: 10px;
   }
 
-  .buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 50px;
-    margin-top: 10px;
-  }
-
   button {
     font-size: 16px;
     font-weight: 500;
@@ -63,17 +55,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 5px;
     cursor: pointer;
     color: #ffffff;
-  }
-
-  .buttonSubmit {
+    margin-top: 10px;
     background-color: #9acd32;
     width: 80px;
-    height: 35px;
-  }
-
-  .buttonHome {
-    background-color: #b22222;
-    width: 90px;
     height: 35px;
   }
 }

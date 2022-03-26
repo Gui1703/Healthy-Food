@@ -8,7 +8,7 @@ import "./styles.scss";
 function Register() {
   const navigate = useNavigate();
 
-  //Buscando o CEP e preenchendo seus devidos inputs
+  //Seeking the zip code and filling its due inputs
   const checkCEP = (e) => {
     const cep = e.target.value.replace(/\D/g, "");
     fetch(`https://viacep.com.br/ws/${cep}/json/`)
@@ -22,7 +22,7 @@ function Register() {
       });
   };
 
-  // Salvando no local Storage
+  //Saving on site Storage
   let saveLocalDataStorage = function () {
     let name = document.getElementById("name").value;
     let birthDate = document.getElementById("birthDate").value;
@@ -44,7 +44,7 @@ function Register() {
     localStorage.setItem("district", district);
   };
 
-  // Validando os inputs
+  //Validating inputs
   const createUserFormSchema = yup.object().shape({
     name: yup
       .string()
@@ -63,7 +63,7 @@ function Register() {
     addressNumber: yup.string().required("Your address number is required."),
     uf: yup.string().required("UF is required."),
     address: yup.string().required("Address is required."),
-    district: yup.string().required("district is required."),
+    district: yup.string().required("District is required."),
   });
 
   const {
@@ -143,6 +143,7 @@ function Register() {
             placeholder="City:"
             {...register("city")}
           />
+          <span>{errors.city?.message}</span>
         </div>
 
         <div>
@@ -165,6 +166,7 @@ function Register() {
             placeholder="UF:"
             {...register("uf")}
           />
+          <span>{errors.uf?.message}</span>
         </div>
 
         <div>
@@ -176,6 +178,7 @@ function Register() {
             placeholder="Address:"
             {...register("address")}
           />
+          <span>{errors.address?.message}</span>
         </div>
 
         <div>
@@ -183,10 +186,11 @@ function Register() {
             type="text"
             name="district"
             disabled
-            id="district"
-            placeholder="district:"
+            id="District"
+            placeholder="District:"
             {...register("district")}
           />
+          <span>{errors.district?.message}</span>
         </div>
 
         <div className="buttons">

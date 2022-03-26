@@ -5,7 +5,6 @@ import UpBar from "../../components/UpBar";
 import "./styles.scss";
 
 function Register() {
-
   //Seeking the zip code and filling its due inputs
   const checkCEP = (e) => {
     const cep = e.target.value.replace(/\D/g, "");
@@ -14,7 +13,7 @@ function Register() {
       .then((data) => {
         setValue("city", data.localidade);
         setValue("address", data.logradouro);
-        setValue("district", data.bairro);
+        setValue("neighborhood", data.bairro);
         setValue("uf", data.uf);
         setFocus("addressNumber");
       });
@@ -30,7 +29,7 @@ function Register() {
     let addressNumber = document.getElementById("addressNumber").value;
     let uf = document.getElementById("uf").value;
     let address = document.getElementById("address").value;
-    let district = document.getElementById("district").value;
+    let neighborhood = document.getElementById("neighborhood").value;
     localStorage.setItem("name", name);
     localStorage.setItem("birthDate", birthDate);
     localStorage.setItem("cpf", cpf);
@@ -39,7 +38,7 @@ function Register() {
     localStorage.setItem("address_Number", addressNumber);
     localStorage.setItem("uf", uf);
     localStorage.setItem("address", address);
-    localStorage.setItem("district", district);
+    localStorage.setItem("neighborhood", neighborhood);
   };
 
   //Validating inputs
@@ -61,7 +60,7 @@ function Register() {
     addressNumber: yup.string().required("Your address number is required."),
     uf: yup.string().required("UF is required."),
     address: yup.string().required("Address is required."),
-    district: yup.string().required("District is required."),
+    neighborhood: yup.string().required("neighborhood is required."),
   });
 
   const {
@@ -178,13 +177,13 @@ function Register() {
         <div>
           <input
             type="text"
-            name="district"
+            name="neighborhood"
             disabled
-            id="District"
+            id="neighborhood"
             placeholder="District:"
-            {...register("district")}
+            {...register("neighborhood")}
           />
-          <span>{errors.district?.message}</span>
+          <span>{errors.neighborhood?.message}</span>
         </div>
 
         <button type="submit">Submit</button>

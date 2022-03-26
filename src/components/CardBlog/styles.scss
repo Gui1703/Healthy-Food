@@ -21,7 +21,6 @@
     }
   }
 
-  
   .bottom {
     display: flex;
     flex-direction: column;
@@ -48,21 +47,11 @@
 
 @media (max-width: 640px) {
   .container-card-blog {
-    display: flex;
-    flex-direction: column;
-
     img {
       width: 250px;
     }
 
-    .bottom {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
     .description-card-blog {
-      line-height: normal;
       font-size: 20px;
       width: 250px;
     }

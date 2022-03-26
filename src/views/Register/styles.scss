@@ -27,6 +27,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   input {
@@ -40,6 +41,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 5px;
     font-weight: 400;
     color: #808080;
+
+    max-width: 100%;
   }
 
   span {
@@ -55,9 +58,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 5px;
     cursor: pointer;
     color: #ffffff;
-    margin-top: 10px;
+    margin: 10px 0;
     background-color: #9acd32;
     width: 80px;
     height: 35px;
+
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container-register {
+    background-position: 10%;
+  }
+
+  .form-register {
+    margin-left: 20px;
   }
 }

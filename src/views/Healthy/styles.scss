@@ -18,54 +18,53 @@
   background: url(../../assets/BackgroundsImages/home.svg);
   background-repeat: no-repeat;
   background-position: right;
-}
 
-.description {
-  display: flex;
-  font-size: 60px;
-  font-weight: 700;
-  margin-top: 300px;
-  color: #05053d;
-  width: 350px;
-  line-height: 60px;
-}
+  .description {
+    display: flex;
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 300px;
+    color: #05053d;
+    width: 350px;
+    line-height: 60px;
+  }
 
-.input-button {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-}
+  .input-button {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
 
-.input-button input {
-  margin-left: 200px;
-  width: 350px;
-  height: 40px;
-  padding-left: 10px;
-  border: 3px solid #808080;
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: 400;
-}
+  .input-button input {
+    margin-left: 200px;
+    width: 350px;
+    height: 40px;
+    padding-left: 10px;
+    border: 3px solid #808080;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+  }
 
-.input-home::placeholder {
-  opacity: 0.8;
-}
+  .input-home::placeholder {
+    opacity: 0.8;
+  }
 
-.input-button button {
-  width: 43px;
-  height: 40px;
-  border: none;
-  border-radius: 3px;
-  background-color: #9acd32;
-  color: #ffffff;
-  margin-left: 15px;
-  cursor: pointer;
-}
+  .input-button button {
+    width: 43px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: #9acd32;
+    margin-left: 15px;
+    cursor: pointer;
+  }
 
-.bx-search-alt-2 {
-  margin: auto;
-  font-size: 28px;
-  color: #ffffff;
+  .bx-search-alt-2 {
+    margin: auto;
+    font-size: 28px;
+    color: #ffffff;
+  }
 }
 
 .button-home:hover {
@@ -78,23 +77,10 @@
 
 @media (max-width: 640px) {
   .container-background {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    height: 100vh;
-
-    background: url(../../assets/BackgroundsImages/home.svg);
-    background-repeat: no-repeat;
-    background-position: left;
+    background-position: 10%;
 
     .description {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
       font-size: 25px;
-      font-weight: 700;
       margin-top: 250px;
       color: #05053d;
     }
@@ -102,82 +88,11 @@
     .input-button input {
       margin-left: 10px;
       width: 85%;
-      height: 40px;
-      padding-left: 10px;
-      border: 3px solid #808080;
-      border-radius: 5px;
-      font-size: 18px;
-      font-weight: 400;
-    }
-
-    .input-button button {
-      width: 43px;
-      height: 40px;
-      border: none;
-      border-radius: 3px;
-      background-color: #9acd32;
-      margin-left: 10px;
-      cursor: pointer;
-
-      .bx-search-alt-2 {
-        margin: auto;
-        font-size: 28px;
-        color: #ffffff;
-      }
     }
   }
 }
 
 // Screen Best Recipes
-@media (max-width: 640px) {
-  .container-best {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    width: 100%;
-
-    .title-best {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: #0b0b74;
-      font-size: 30px;
-      font-weight: 900;
-    }
-
-    .paragraph-one {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin: 0;
-      margin-top: 5px;
-      font-size: 14px;
-
-      color: #808080;
-    }
-
-    .paragraph-two {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: #808080;
-      font-size: 14px;
-
-      margin-bottom: 30px;
-    }
-
-    .card-food {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      margin: 0;
-      margin-bottom: 20px;
-      margin-left: 10px;
-    }
-  }
-}
-
 .container-best {
   display: flex;
   flex-direction: column;
@@ -215,4 +130,24 @@
   gap: 350px;
   margin-left: 200px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+  .container-best {
+    .title-best {
+      font-size: 30px;
+    }
+
+    .paragraph-one,
+    .paragraph-two {
+      font-size: 14px;
+    }
+
+    .card-food {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-left: 10px;
+    }
+  }
 }

@@ -16,6 +16,7 @@
     font-size: 35px;
     margin: 0;
     width: 270px;
+    font-weight: 500;
   }
 
   button {
@@ -47,38 +48,20 @@
 
 @media (max-width: 640px) {
   .container-card {
-    display: flex;
-    flex-direction: row;
     width: 80%;
 
     img {
       width: 150px;
     }
 
-    .right {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin: auto;
-      margin-left: 20px;
-    }
-
     .description {
-      line-height: normal;
       font-size: 20px;
-      margin: 0;
       width: 90%;
     }
 
     button {
       width: 100px;
-      height: 30px;
       font-size: 15px;
-      color: #ffffff;
-      border: none;
-      border-radius: 5px;
-      background-color: #9acd32;
-      margin-top: 5px;
     }
   }
 }
